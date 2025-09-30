@@ -1,65 +1,23 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+# The directory Mix will write compiled artifacts to.
+/_build/
 
-# Virtual environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+# If you run "mix test --cover", coverage assets end up here.
+/cover/
 
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
+# The directory Mix downloads your dependencies sources to.
+/deps/
 
-# OS files
-.DS_Store
-Thumbs.db
+# Where third-party dependencies like ExDoc output generated docs.
+/doc/
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# If the VM crashes, it generates a dump, let's ignore it too.
+erl_crash.dump
 
-# Game engine specific
-*.log
-*.cache
-*.tmp
+# Also ignore archive artifacts (built via "mix archive.build").
+*.ez
 
-# Database
-*.db
-*.sqlite
-*.sqlite3
+# Ignore package tarball (built via "mix hex.build").
+realtime_strategy_sim-*.tar
 
-# Testing
-.coverage
-.pytest_cache/
-htmlcov/
-
-# Linting
-.mypy_cache/
-.flake8
+# Temporary files, for example, from tests.
+/tmp/
